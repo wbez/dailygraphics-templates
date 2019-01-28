@@ -6,7 +6,7 @@
 <h2><%= t.smarty(COPY.labels.subhed) %></h2>
 <% } %>
 
-<div id="block-histogram" class="graphic" role="img"
+<div id="" class="graphic" role="img"
 <% if (COPY.labels.screenreader) { %>
 aria-label="<%- COPY.labels.screenreader %>"
 <% } %>
@@ -26,7 +26,8 @@ aria-label="<%- COPY.labels.screenreader %>"
     <% if (COPY.labels.credit) { %><p>Credit: <%= COPY.labels.credit %></p><% } %>
 </div>
 
+<% if ("data" in COPY) { %>
 <script type="text/javascript">
-    var DATA = <%= JSON.stringify(COPY.data) %>;
-    var LABELS = <%= JSON.stringify(COPY.labels) %>;
+window.DATA = <%= JSON.stringify(COPY.data) %>;
 </script>
+<% } %>

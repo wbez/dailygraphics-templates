@@ -1,12 +1,12 @@
 <% if (COPY.labels.headline) { %>
-<h1><%= COPY.labels.headline %></h1>
+<h1><%= t.smarty(COPY.labels.headline) %></h1>
 <% } %>
 
 <% if (COPY.labels.subhed) { %>
-<h2><%= COPY.labels.subhed %></h2>
+<h2><%= t.smarty(COPY.labels.subhed) %></h2>
 <% } %>
 
-<div class="graphic">
+<div class="graphic" id="table-graphic">
   <table id="state-table">
     <thead>
       <tr>
