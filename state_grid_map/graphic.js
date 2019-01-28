@@ -113,12 +113,12 @@ var renderStateGridMap = function(config) {
       .scaleOrdinal()
       .domain(categories)
       .range([
-        COLORS.teal6,
-        COLORS.teal5,
-        COLORS.teal4,
-        COLORS.teal3,
-        COLORS.teal2,
-        COLORS.teal1
+        COLORS.wbezred,
+        COLORS.red1,
+        COLORS.red2,
+        COLORS.red3,
+        COLORS.red4,
+        COLORS.red5
       ]);
   } else {
     // Define color scale
@@ -126,11 +126,11 @@ var renderStateGridMap = function(config) {
       .scaleOrdinal()
       .domain(categories)
       .range([
-        COLORS.red3,
-        COLORS.yellow3,
-        COLORS.blue3,
+        COLORS.wbezred,
+        COLORS.wbezyellow,
+        COLORS.teal3,
         COLORS.orange3,
-        COLORS.teal3
+        COLORS.wbezredlight
       ]);
   }
 

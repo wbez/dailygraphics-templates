@@ -159,7 +159,7 @@ var renderLineChart = function(config) {
       })
     )
     .range([
-      COLORS.red3,
+      COLORS.wbezred,
       COLORS.yellow3,
       COLORS.blue3,
       COLORS.orange3,
