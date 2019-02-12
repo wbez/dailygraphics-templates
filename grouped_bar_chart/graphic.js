@@ -143,7 +143,7 @@ var renderGroupedBarChart = function(config) {
         d => skipLabels.indexOf(d) == -1
       )
     )
-    .range([COLORS.wbezred, COLORS.wbezredlight]);
+    .range([COLORS.wbezred, COLORS.gray2]);
   // Render a color legend.
   var legend = containerElement
     .append("ul")
